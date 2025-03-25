@@ -15,7 +15,7 @@ header {
     background-color: #F7BC47;
     font-size: 20px;
     font-weight: 700;
-    padding: 10px;
+    padding: 20px;
     color: #243D4B;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -97,6 +97,18 @@ select {
 }
 p{
     padding: 20px;
+}
+
+.button-copy{
+    background: transparent;
+    border: none;
+    transition: all .1s ease-in;
+    margin-top: 20px;
+}
+
+.button-copy:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 footer{

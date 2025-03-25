@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     generateButton.addEventListener('click', () => {
         generateScheme()
     })
+
+    const paragraph = document.querySelectorAll('.button-copy')
+    paragraph.forEach(paragraph => paragraph.addEventListener('click', copyClipboard ))
 })
 
 function getSelectValue() {
@@ -73,6 +76,10 @@ function giveColors (apiData) {
     fifthColorBox.style.backgroundColor = fifthColor
 }
 
+function copyClipboard () {
+    navigator.clipboard.writeText(this.textContent)
+    alert('Copiado al portapapeles')
+}
 
 async function getAPIData(apiURL, method = 'GET' , data) {
     let apiData
