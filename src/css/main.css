@@ -2,400 +2,109 @@ body {
     max-width: 100%;    
     max-height: 100%;
     text-align: center;
-    font-family:'Times New Roman', Times, serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-nav {
-    width: 414px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+header {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #F7BC47;
+    font-size: 20px;
+    font-weight: 700;
     padding: 10px;
-    background-color: #243D4B; 
-    color: #F7BC47;
-    margin: auto;
-}
-
-nav img {
-    width: 23px;
-}
-
-nav h1 {
-    font-size: 1rem;
-    margin-left: -70px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    font-size: 1rem;
-    margin-right: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: #F7BC47;
-}
-
-.main-blog{
-    display: flex;
-    flex-direction: column;
-    width: 414px;
-    height: 300px;
-    margin: auto;
-    background-image: url(../assets/article-image-hero.png);
-    background-size: cover
-}
-
-#main-blog-component{
-    color: white;
-}
-.date{
-    font-size: 1rem;
-    font-weight:400;
-    font-style: italic;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: -20px;
-    margin-top: 120px;
-}
-
-.title{
-    font-size:2rem;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: -10px;
-    transition: all 0.2s ease;
-}
-
-.title:hover{
-    scale: 1.05;
     color: #243D4B;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.description{
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.more-blogs{
-    width: 374px;
-    height: 370px;
+.generator-container {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    padding: 10px;
     margin: auto;
+    justify-content: space-evenly;
 }
 
-#more-blogs-component{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.image-blog{
-    width: 374px;
-    height: 232px;
-    margin-bottom: -100px;
-    border-radius: 3px;
-}
-
-#view-more-button, #view-less-button{
-    width: 100px;
-    height: 30px;
-    margin: auto;
+#color-input {
+    width: 61px;
+    height: 42px;
     border: none;
-    background-color: transparent;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: underline;
+}
+
+select {
+    width: 312px;
+    height: 42px;
+    border-radius: 6px;
+    border: solid 1px #D1D5DB;
+    text-align:center;
+    appearance: none;
+}
+#generate {
+    width: 123px;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid #D1D5DB;
+    background-color: white;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.color {
+    width: 110px;
+    height: 414px;
+    background-color: #243D4B;
+}
+
+.color-1{
+    width: 110px;
+    height: 414px;
+    background-color: #F7BC47;
+}
+
+.color-2{
+    width: 110px;
+    height: 414px;
+    background-color: #2B283A;
+}
+
+.color-3{
+    width: 110px;
+    height: 414px;
+    background-color: #FBF3AB;
+}
+
+.color-4{
+    width: 110px;
+    height: 414px;
+    background-color: #AAD1B6;
+}
+
+.color-5{
+    width: 110px;
+    height: 414px;
+    background-color: #D1D5DB;
+}
+p{
+    padding: 20px;
 }
 
 footer{
-    width: 414px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
+    background-color: #243D4B;
+    width: 100%;
     margin: auto;
-    color: #243D4B;
-    background-color:#F7BC47 ;
+    padding: 25px;
+    margin-top: 50px;
+    color: #F7BC47;
 }
 
-.copyright{
-    margin:auto;
-}
-
-.hidden{
-    display: none;
-}
-
-.fadeIn {
-    animation: fadeIn 0.5s;
-}
-
-.fadeOut {
-    animation: fadeOut 0.5s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-/*=====ABOUT ME PAGE =======*/
-
-.profile{
-    width:182px;
-    border-radius: 100px;
-    justify-content: start;
-    margin-left: -200px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.introduction{
-    font-size: 2rem;
-    font-weight: 700;
-    width: 351px;
-    text-align: left;
-    margin-left: 20px;
-}
-
-.my-description{
-    font-size: 1.2rem;
-    font-weight: 400;
-    width: 374px;
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-dl{
-    width: 374px;
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-dt{
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-dd{
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.recent {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-top: 40px;
-    margin-left: 20px;
-}
-
-/*=====ABOUT ME PAGE =======*/
-
-.date-sample{
-    font-size: 1rem;
-    font-weight:400;
-    font-style: italic;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 20px ;
-    margin-top: 40px;
-}
-
-.title-sample{
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.description-sample{    
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.image-sample{
-    width: 374px;
-    height: 232px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-}
-
-/*=====RESPONSIVE =======*/
-
-@media screen and (min-width: 1085px) {
-    nav{
-        width: 100%;
-    }
-    nav img {
-        width: 35px;
-        margin-left: 20px;
-    }
-    nav h1{
-        font-size: 2.5rem;
-        margin-left: -350px;
-    }
-    nav ul{
-        margin-right: 50px;
-    }
-    main{
-        width: 1085px;
-    }
-    .more-blogs{
-        width: 1085px;
-    }
-    li{
-        font-size: 2rem;
-
-    }
-    .main-blog{
-        width: 1085px;
-        height: 488px;
-    }
-    .date{
-        font-size: 1.3rem;
-        margin-top: 250px;
-    }
-
-    .title{
-        width: 657px;
-        font-size: 2.2rem;
-    }
-    .description{
-        width: 615px;
-        font-size: 1.3rem;
-    }
-    #more-blogs-component{
-        width: 309px;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .image-blog{
-        width: 309px;
-    }
-
-    #more-blogs-component .date {
-        font-size: 16px;
-        width: 309px;
-        margin-left: unset;
-        margin-top: 120px;
-    }
-
-    #more-blogs-component .title {
-        font-size: 24px;
-        width: 309px;
-        margin-left: unset;
-
-    }
-
-    #more-blogs-component .description {
-        font-size: 16px;
-        width: 309px;
-        margin-left: unset;
-    }
-
-    #more-blogs-section {
-        display: flex;
-    }
-
-    #view-more-button, #view-less-button{
-        font-size: 1.5rem;
-        width: 400px;
-        margin-top: 120px;
-    }
-
-    footer{
-        width: 100%;
-        margin-top: 100px;
-        font-size: 2rem;
-    }
-
-    /*=====ABOUT ME PAGE =======*/
-    .profile{
-        width: 182px;
-    }
-
-    #about-me{
-        display: flex;
-        flex-direction: row;
-        margin-left: 250px;
-    }
-
-    #info{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }  
-    
-    #info h1{
-        width: 764px;
-        font-size: 2.3rem;
-    }
-
-    #info h2{
-        width: 764px;
-        font-size: 1.5rem;
-    }
-    /*=====SAMPLE PAGE =======*/
-
-    #main-blog-sample{
-        width: 979px;
-    }
-
-    .date-sample{
-        width: 979px;
-        font-size: 1.3rem;
-        margin-left: 150px;
-    }
-
-    .title-sample{
-        width: 808px;
-        font-size: 2.2rem;
-        margin-left: 150px;
-
-    }
-
-    .description-sample{
-        width: 842px;
-        font-size: 1.3rem;
-        margin-left: 150px;
-
-    }
-
-    .image-sample{
-        width: 979px;
-        height: 488px;
-        margin: auto;
-        margin-left: 50px;
-    }
-
-    dl{
-        width: 979px;
-        margin: auto;
-        font-size: 1.3rem;
-    }
-}
