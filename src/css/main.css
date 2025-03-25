@@ -5,18 +5,18 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-
-
 header {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     margin: auto;
     text-align: center;
-    background-color: #F7BC47;
+    background-color: #243D4B;
     font-size: 20px;
     font-weight: 700;
     padding: 20px;
-    color: #243D4B;
+    color: #F7BC47;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -120,3 +120,19 @@ footer{
     color: #F7BC47;
 }
 
+#mode{
+    background: transparent;
+    border: none;
+    transition: all .1s ease-in;
+    font-size: 20px;
+    color: black;;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}

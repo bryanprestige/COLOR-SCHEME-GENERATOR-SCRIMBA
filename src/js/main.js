@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const paragraph = document.querySelectorAll('.button-copy')
     paragraph.forEach(paragraph => paragraph.addEventListener('click', copyClipboard ))
+
+    const modeButton = document.querySelector('#mode')
+    modeButton.addEventListener('click', () => {
+        const body = document.querySelector('body')
+        paragraph.forEach(paragraph => paragraph.classList.toggle('dark-mode'))
+        body.classList.toggle('dark-mode')  
+        
+        modeButton.innerHTML = body.classList.contains('dark-mode') ? '🌞' : '🌙'
+    })
 })
 
 function getSelectValue() {
